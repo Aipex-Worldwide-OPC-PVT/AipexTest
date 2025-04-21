@@ -10,3 +10,5 @@ services:
       - "80:80"
     depends_on:
       - backend
+    volumes:
+      - ./frontend/nginx.conf:/etc/nginx/nginx.conf
